@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="style_about.css"> <!--Use to link to css file-->
+        <script>
+            function validate(){
+                var primEmail = document.getElementById("primEmail").value;
+                var secEmail = document.getElementById("secEmail").value;
+                if (primEmail != secEmail){
+                    alert("Sorry! Email Fields Must Match.")
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+</head>
+<body>
+    <nav>
+        <div class="navBar">
+            <div class="container">
+                <div class= "title">
+                    <ul>
+                        <li><img src="Wgu 277/florida flag.png" alt="Florida Symbol"></li>
+                        <li><p>FLORIDA</p></li>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\index.html">HOME</a></li>
+                        <li><a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\about.html">ABOUT</a></li>
+                        <li class="menuContainer">
+                                <a  style="cursor: pointer;">CITIES</a>
+                            <div class="dropDown">
+                                <div class="content">
+                                    <a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\miami.html">MIAMI</a>
+                                    <a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\pensacola.html">PENSACOLA</a>
+                                    <a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\tallahassee.html">TALLAHASSEE</a>
+                                </div>
+                            </div>
+                         </li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+    </nav>
+    <nav class="breadCrumb">
+        <div class="container">
+            <div class="bcContainer">
+                <ul>
+                    <li><a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\index.html">/ HOME</a></li>
+                    <li><a style="color: #F19A18;" href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\about.html">/ ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="sectionContainer">
+                <div class="aboutContainer">
+                    <section class="TITLE"></section>
+                        <h1>ABOUT</h1>
+                    <section class="ABOUT"></section>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="cfContainer">
+                <div class="Form">
+                    <div class="Row">
+                        <div class="Column">
+                            <div class="Title"><h3>First Name</h3></div>
+                            <div class="Input"> <input type="text" placeholder="First Name"></div>
+                        </div>
+                        <div class="Column" style="margin-left: 30px;">
+                            <div class="Title"><h3>Last Name</h3></div>
+                            <div class="Input"> <input type="text" placeholder="Last Name"></div>
+                        </div>
+                    </div>
+                    <div class="Row">
+                        <div class="Column">
+                            <div class="Title"><h3>Email</h3></div>
+                            <div class="Input"> <input id="primEmail" type="email" placeholder="Email"></div>
+                            <div class="Input"> <input id= "secEmail" type="email" placeholder="Confirm Email"></div>
+                        </div>
+                    </div>
+                    <div class="Row">
+                        <div class="Column">
+                            <div class="Title"><h3>Inquire</h3></div>
+                            <div class="Input"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="Row" style="justify-content: end;" >
+                        <div class="Button"><input onclick="validate()" type="button" value="Submit"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id = "footer">
+        <nav>
+            <div class="navBar">
+                <div class="container">
+                    <div></div>
+                    <ul class = "nav">
+                        <li><a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\index.html">HOME</a></li>
+                        <li><a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\about.html">ABOUT</a></li>
+                        <li class="menuContainer">
+                                <a  style="cursor: pointer;">CITIES</a>
+                            <div class="dropDown">
+                                <div class="content">
+                                    <a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\miami.html">MIAMI</a>
+                                    <a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\pensacola.html">PENSACOLA</a>
+                                    <a href="E:\WGU\Projects\GitHub\Cloned Repositories\WGU_FE_WEBSITE\tallahassee.html">TALLAHASSEE</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div></div>
+                </div>   
+            </div>
+        </nav>
+    </footer>
+</body>
