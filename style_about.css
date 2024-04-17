@@ -10,12 +10,14 @@ body{
     line-height: 1.5;
     color: black;
     background-color: white;
+    position: absolute;
 }
 
 .floridaPen img{
     max-width: 100%;
     width: 600px;
     height: 600px;
+    position: absolute;
 }
 
 h1,
@@ -187,22 +189,67 @@ ul{
 .cfContainer{
     margin-top: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+    
+}
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     outline-style: solid;
-    outline-color: black;
+    outline-color: #000;
+    outline-width: 1px;
+    max-width: 250px;
+}
+
+.tTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #711919;
+    padding-top: 10px;
+    width: 100%;
+    min-height: 90px;
+    
+}
+.tTitle h1{
+    color: white;
+    font-size: 32px;
+}
+
+.Aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6B552;
+    outline-style: solid;
+    outline-color: #000;
     outline-width: 1px;
     padding: 10px;
-    background-color: #BEB8B8;
-    margin-top: px;
+    flex-grow: 1;
+    padding-left: 18px;
+    width: 100%;
+    min-width: 20px;
+    min-height: 600px;
 }
 
 .Form{
     display: flex;
     flex-direction: column;
+    align-items: start;
     justify-content: space-between;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 1px;
+    padding: 50px;
+    flex-grow: 3;
+    background-color: #BEB8B8;
     margin: 10px;
+    margin-left: 30px;
 }
 
 .Row{
@@ -246,7 +293,7 @@ ul{
     color: #711919;
 }
   textarea {
-    min-width: 850px;
+    min-width: 800px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -258,6 +305,9 @@ ul{
     outline-width: 1px;
     font-size: 20px;
   }
+
+
+  
   
 .Title h3{
     margin-top: 15px;
@@ -267,7 +317,7 @@ ul{
 footer{
     margin-top: 100px;
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 @media(max-width: 768px){

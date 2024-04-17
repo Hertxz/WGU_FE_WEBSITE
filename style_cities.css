@@ -10,13 +10,9 @@ body{
     line-height: 1.5;
     color: black;
     background-color: white;
+    position: absolute;
 }
 
-.floridaPen img{
-    max-width: 100%;
-    width: 600px;
-    height: 600px;
-}
 
 h1,
 h2{
@@ -340,6 +336,11 @@ ul{
     align-items: start;
 }
 
+
+ol li{
+    margin-top: 10px;
+}
+
 table{
     width:90%; 
     border: 1px solid black;
@@ -368,6 +369,8 @@ td{
     border: 1px solid black; 
     border-collapse: collapse;
     padding: 10px;
+    font-size: 16px;
+    
 }
 
 footer{
